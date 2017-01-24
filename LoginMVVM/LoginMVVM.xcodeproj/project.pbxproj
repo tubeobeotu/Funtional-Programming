@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB7304F11E37624600603B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7304F01E37624600603B59 /* AppDelegate.swift */; };
+		CB7304F31E37624600603B59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7304F21E37624600603B59 /* ViewController.swift */; };
+		CB7304F61E37624600603B59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7304F41E37624600603B59 /* Main.storyboard */; };
+		CB7304F81E37624600603B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7304F71E37624600603B59 /* Assets.xcassets */; };
+		CB7304FB1E37624600603B59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7304F91E37624600603B59 /* LaunchScreen.storyboard */; };
+		CB7305091E37646300603B59 /* LoginButtonPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7305081E37646300603B59 /* LoginButtonPresentable.swift */; };
+		CB73050B1E37648200603B59 /* LoginTextFieldPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73050A1E37648200603B59 /* LoginTextFieldPresentable.swift */; };
+		CB73050D1E37649400603B59 /* LoginPasswordPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73050C1E37649400603B59 /* LoginPasswordPresentable.swift */; };
+		CB73050F1E3767BE00603B59 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73050E1E3767BE00603B59 /* LoginFormView.swift */; };
+		CB7305181E376E5100603B59 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7305171E376E5100603B59 /* UITextField.swift */; };
+		CB73051A1E376EDF00603B59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7305191E376EDF00603B59 /* LoginViewController.swift */; };
+		CB73051C1E376F7300603B59 /* LoginFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73051B1E376F7300603B59 /* LoginFormViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB7304ED1E37624600603B59 /* LoginMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7304F01E37624600603B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB7304F21E37624600603B59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB7304F51E37624600603B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB7304F71E37624600603B59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB7304FA1E37624600603B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB7304FC1E37624600603B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB7305081E37646300603B59 /* LoginButtonPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButtonPresentable.swift; sourceTree = "<group>"; };
+		CB73050A1E37648200603B59 /* LoginTextFieldPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextFieldPresentable.swift; sourceTree = "<group>"; };
+		CB73050C1E37649400603B59 /* LoginPasswordPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPasswordPresentable.swift; sourceTree = "<group>"; };
+		CB73050E1E3767BE00603B59 /* LoginFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
+		CB7305171E376E5100603B59 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		CB7305191E376EDF00603B59 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CB73051B1E376F7300603B59 /* LoginFormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFormViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB7304EA1E37624600603B59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB7304E41E37624600603B59 = {
+			isa = PBXGroup;
+			children = (
+				CB7304EF1E37624600603B59 /* LoginMVVM */,
+				CB7304EE1E37624600603B59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB7304EE1E37624600603B59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB7304ED1E37624600603B59 /* LoginMVVM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB7304EF1E37624600603B59 /* LoginMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				CB7305161E376E4700603B59 /* Extensions */,
+				CB7305061E37629200603B59 /* Controllers */,
+				CB7305051E37626600603B59 /* Models */,
+				CB7305041E37625E00603B59 /* ViewModels */,
+				CB7305031E37625700603B59 /* Presenters */,
+				CB7305021E37625000603B59 /* Views */,
+				CB7304F01E37624600603B59 /* AppDelegate.swift */,
+				CB7304F21E37624600603B59 /* ViewController.swift */,
+				CB7304F41E37624600603B59 /* Main.storyboard */,
+				CB7304F71E37624600603B59 /* Assets.xcassets */,
+				CB7304F91E37624600603B59 /* LaunchScreen.storyboard */,
+				CB7304FC1E37624600603B59 /* Info.plist */,
+			);
+			path = LoginMVVM;
+			sourceTree = "<group>";
+		};
+		CB7305021E37625000603B59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB73050E1E3767BE00603B59 /* LoginFormView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CB7305031E37625700603B59 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				CB7305071E37641400603B59 /* Login */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		CB7305041E37625E00603B59 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CB73051B1E376F7300603B59 /* LoginFormViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		CB7305051E37626600603B59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CB7305061E37629200603B59 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB7305191E376EDF00603B59 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CB7305071E37641400603B59 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CB7305081E37646300603B59 /* LoginButtonPresentable.swift */,
+				CB73050A1E37648200603B59 /* LoginTextFieldPresentable.swift */,
+				CB73050C1E37649400603B59 /* LoginPasswordPresentable.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		CB7305161E376E4700603B59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB7305171E376E5100603B59 /* UITextField.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB7304EC1E37624600603B59 /* LoginMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB7304FF1E37624600603B59 /* Build configuration list for PBXNativeTarget "LoginMVVM" */;
+			buildPhases = (
+				CB7304E91E37624600603B59 /* Sources */,
+				CB7304EA1E37624600603B59 /* Frameworks */,
+				CB7304EB1E37624600603B59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoginMVVM;
+			productName = LoginMVVM;
+			productReference = CB7304ED1E37624600603B59 /* LoginMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB7304E51E37624600603B59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Tuuu;
+				TargetAttributes = {
+					CB7304EC1E37624600603B59 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = S49VK8B668;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CB7304E81E37624600603B59 /* Build configuration list for PBXProject "LoginMVVM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB7304E41E37624600603B59;
+			productRefGroup = CB7304EE1E37624600603B59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB7304EC1E37624600603B59 /* LoginMVVM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB7304EB1E37624600603B59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7304FB1E37624600603B59 /* LaunchScreen.storyboard in Resources */,
+				CB7304F81E37624600603B59 /* Assets.xcassets in Resources */,
+				CB7304F61E37624600603B59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB7304E91E37624600603B59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7304F31E37624600603B59 /* ViewController.swift in Sources */,
+				CB73050B1E37648200603B59 /* LoginTextFieldPresentable.swift in Sources */,
+				CB7305181E376E5100603B59 /* UITextField.swift in Sources */,
+				CB73050F1E3767BE00603B59 /* LoginFormView.swift in Sources */,
+				CB73051C1E376F7300603B59 /* LoginFormViewModel.swift in Sources */,
+				CB73051A1E376EDF00603B59 /* LoginViewController.swift in Sources */,
+				CB7305091E37646300603B59 /* LoginButtonPresentable.swift in Sources */,
+				CB7304F11E37624600603B59 /* AppDelegate.swift in Sources */,
+				CB73050D1E37649400603B59 /* LoginPasswordPresentable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB7304F41E37624600603B59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB7304F51E37624600603B59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB7304F91E37624600603B59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB7304FA1E37624600603B59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB7304FD1E37624600603B59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB7304FE1E37624600603B59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB7305001E37624600603B59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S49VK8B668;
+				INFOPLIST_FILE = LoginMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nvt.LoginMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CB7305011E37624600603B59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S49VK8B668;
+				INFOPLIST_FILE = LoginMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nvt.LoginMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB7304E81E37624600603B59 /* Build configuration list for PBXProject "LoginMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7304FD1E37624600603B59 /* Debug */,
+				CB7304FE1E37624600603B59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB7304FF1E37624600603B59 /* Build configuration list for PBXNativeTarget "LoginMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7305001E37624600603B59 /* Debug */,
+				CB7305011E37624600603B59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB7304E51E37624600603B59 /* Project object */;
+}
