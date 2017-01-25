@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CB7304F11E37624600603B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7304F01E37624600603B59 /* AppDelegate.swift */; };
-		CB7304F31E37624600603B59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7304F21E37624600603B59 /* ViewController.swift */; };
 		CB7304F61E37624600603B59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7304F41E37624600603B59 /* Main.storyboard */; };
 		CB7304F81E37624600603B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7304F71E37624600603B59 /* Assets.xcassets */; };
 		CB7304FB1E37624600603B59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7304F91E37624600603B59 /* LaunchScreen.storyboard */; };
@@ -24,7 +23,6 @@
 /* Begin PBXFileReference section */
 		CB7304ED1E37624600603B59 /* LoginMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7304F01E37624600603B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB7304F21E37624600603B59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB7304F51E37624600603B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB7304F71E37624600603B59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB7304FA1E37624600603B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				CB7305031E37625700603B59 /* Presenters */,
 				CB7305021E37625000603B59 /* Views */,
 				CB7304F01E37624600603B59 /* AppDelegate.swift */,
-				CB7304F21E37624600603B59 /* ViewController.swift */,
 				CB7304F41E37624600603B59 /* Main.storyboard */,
 				CB7304F71E37624600603B59 /* Assets.xcassets */,
 				CB7304F91E37624600603B59 /* LaunchScreen.storyboard */,
@@ -214,7 +211,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7304F31E37624600603B59 /* ViewController.swift in Sources */,
 				CB73050B1E37648200603B59 /* LoginTextFieldPresentable.swift in Sources */,
 				CB7305181E376E5100603B59 /* UITextField.swift in Sources */,
 				CB73050F1E3767BE00603B59 /* LoginFormView.swift in Sources */,
@@ -386,6 +382,7 @@
 				CB7305011E37624600603B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

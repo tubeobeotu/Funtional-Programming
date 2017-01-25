@@ -9,16 +9,19 @@
 import Foundation
 import UIKit
 
-typealias LoginFormPresentable = LoginButtonPresentable & LoginPasswordPresentable & LoginTextFieldPresentable
+typealias LoginFormPresentable = LoginButtonPresentable & LoginPasswordPresentable & LoginTextFieldPresentable & LoginButtonAction
 
-class LoginFormView: UIView, UITextFieldDelegate {
+class LoginFormView: UIView, UITextFieldDelegate, LoginFormViewModelDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var btn_Login: UIButton!
+    
     private var presenter: LoginFormPresentable?
-    var delegate: LoginButtonDelegate?
+    
     func configure(withPresenter presenter: LoginFormPresentable) {
         self.presenter = presenter
+
         
         emailTextField.attributedPlaceholder = NSAttributedString(string: presenter.emailPlaceholder, attributes: [NSForegroundColorAttributeName: presenter.placeholderTextColor])
         
@@ -34,6 +37,9 @@ class LoginFormView: UIView, UITextFieldDelegate {
         passwordTextField.leftView = presenter.passwordLeftView
         passwordTextField.leftViewMode = presenter.passwordLeftViewMode
         
+        btn_Login.backgroundColor = presenter.btn_bgColor
+        btn_Login.titleLabel?.textColor = presenter.btn_textColor
+        
         emailTextField.delegate = self
         passwordTextField.delegate = self
     }
@@ -47,17 +53,18 @@ class LoginFormView: UIView, UITextFieldDelegate {
     }
     
     @IBAction func loginDidTap(sender: UIButton) {
+        print("action")
         doLogin()
     }
     
     func doLogin() {
-        delegate?.login(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
+        self.presenter?.login(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
     }
+    
 }
 
 //MARK: UITextFieldDelegate
 extension LoginFormView {
-    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         let tag = textField.tag
         

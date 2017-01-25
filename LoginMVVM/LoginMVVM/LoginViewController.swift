@@ -8,28 +8,25 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, LoginFormViewModelDelegate {
     @IBOutlet weak var loginFormView: LoginFormView!
+    var loginViewModel: LoginFormViewModel?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupViews()
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setupViews()
+    {
+        loginViewModel = LoginFormViewModel(controller: self)
+        loginViewModel?.delegate = self
+        loginFormView.configure(withPresenter: loginViewModel!)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func showErrors(errors: [String]) {
+        let message = errors.joined(separator: "\n")
+        let errorAlert = UIAlertController(title: "Lỗi", message: message, preferredStyle: .alert)
+        errorAlert.addAction(UIAlertAction(title: "Đồng ý", style: .default, handler: nil))
+        self.present(errorAlert, animated: true, completion: nil)
     }
-    */
 
 }

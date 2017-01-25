@@ -7,9 +7,18 @@
 //
 
 import Foundation
+import UIKit
+
 protocol LoginButtonPresentable {
-    
+    var btn_bgColor: UIColor{get}
+    var btn_textColor: UIColor{get}
 }
-protocol LoginButtonDelegate {
+protocol LoginButtonAction
+{
     func login(email: String, password: String)
+}
+
+@objc protocol LoginFormViewModelDelegate
+{
+    @objc optional func showErrors(errors: [String])
 }
